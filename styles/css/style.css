@@ -30,6 +30,7 @@
   background-size: cover;
 }
 
+
 /* Photo filters */
 
 .grayscale {
@@ -115,57 +116,6 @@
   z-index: 1;
 }
 
-.like-icon .heart {
-  transition: fill 0.1s;
-  transform-origin: center center;
-}
-
-.like-icon .contour {
-  fill: var(--text-color);
-}
-
-.like-icon .main-body {
-  fill: var(--page-background);
-  transition: fill 0.3s linear;
-}
-
-.like-icon .core {
-  fill: var(--page-background);
-  transition: fill 0.3s 0.05s;
-}
-
-.like-icon .sparks {
-  opacity: 0;
-  fill: var(--heart-color);
-}
-
-.like-icon:hover .main-body {
-  fill: var(--text-color);
-}
-
-.like-icon:hover .core {
-  fill: var(--text-color);
-}
-
-.like-icon:active .main-body {
-  fill: var(--heart-color);
-}
-
-.like-icon:active .core {
-  fill: var(--heart-color);
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--heart-color);
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--heart-color);
-}
-
-.like-icon.is-liked .core {
-  fill: var(--heart-color);
-}
 
 /* Buttons */
 
@@ -212,9 +162,10 @@
   mix-blend-mode: difference;
 }
 
+
 .save-button {
   padding: 15px 20px;
-  margin: 0 auto;
+  margin: 20px auto;
   display: flex;
   gap: 8px;
   align-items: center;
@@ -415,7 +366,7 @@
 }
 
 @media (width <= 375px) {
-  .card:nth-child(7) .card__text {
+  .card .card__text {
     max-width: 317px;
   }
 }
