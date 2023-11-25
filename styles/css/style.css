@@ -3,7 +3,6 @@
 /* Body */
 
 .page {
-  font-variation-settings: var(--text-font-weight);
   min-inline-size: 320px;
   min-block-size: 100dvb;
   color: var(--text-color);
@@ -28,6 +27,10 @@
     );
   background-attachment: fixed;
   background-size: cover;
+  --header-background: var(--page-background);
+  --stroke-color: var(--text-color);
+  --label-stroke-color: var(--page-background);
+  
 }
 
 
@@ -77,14 +80,6 @@
   top: 27px;
 }
 
-@supports (text-stroke: 1px var(--label-stroke-color)) or
-  (-webkit-text-stroke: 1px var(--label-stroke-color)) {
-  .image-label {
-    text-shadow: none;
-    -webkit-text-stroke: 1px var(--label-stroke-color);
-    text-stroke: 1px var(--label-stroke-color);
-  }
-}
 
 @media (width <= 375px) {
   .image-label {
